@@ -13,4 +13,12 @@ choice = input("You are at a crossroad. You can go left or right. Which do you c
 if choice == "right":
     print("Game Over.")
 else:
-    choice = input("You have come across a vast lake. In the direction you came from you hear chanting. Do you swim or wait? ")
+    choice = input("You have come across a vast lake. It appears too large to swim across. Do you swim or wait? ")
+    if choice == "swim":
+        print("Game Over")
+    else:
+        choice = input("While waiting, you notice a house with three doors, a red one, a blue one, and a yellow one . Which door do you take? ")
+        if choice == "red" or choice == "blue":
+            print("Game Over")
+        else:
+            print("You found the treasure! You win!")
